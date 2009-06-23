@@ -1,0 +1,23 @@
+!!! 1.0
+%html
+  %head
+    %title
+      = h(yield(:title) || "Untitled")
+    = stylesheet_link_tag 'application'
+    = yield(:head)
+  %body
+    #container
+      #user_nav
+        - if current_user
+          = link_to "Edit profile", edit_user_path(:current)
+          |
+          = link_to "Logout", logout_path
+        - else
+          = link_to "Register", new_user_path
+          |
+          = link_to "Login", login_path
+      - flash.each do |name, msg|
+        = content_tag :div, msg, :id => "flash_#{name}"
+      - if show_title?
+        %h1= h yield(:title) 
+      = yield
