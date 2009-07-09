@@ -1,0 +1,17 @@
+defaults: &defaults
+  application: eagleCV
+  host: localhost:3000
+  email:
+    from: joe@foo.bar
+    subject: Email from eagleCV
+
+development:
+  <<: *defaults
+  email:
+    from: gilles@milizone.com
+
+test:
+  <<: *defaults
+
+production:
+  <<: *defaults

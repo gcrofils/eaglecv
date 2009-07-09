@@ -1,12 +1,18 @@
 ActionController::Routing::Routes.draw do |map|
-  map.login "login", :controller => "user_sessions", :action => "new"
-  map.logout "logout", :controller => "user_sessions", :action => "destroy" 
   
-  map.resources :user_sessions
+  map.resource :account, :controller => "users"
   map.resources :users
+  map.resource :user_session
+  map.login "login", :controller => "user_sessions", :action => "new"
+  map.logout "logout", :controller => "user_sessions", :action => "destroy"
+  map.resources :password_resets
+  map.register '/register/:activation_code', :controller => 'activations', :action => 'new'
+  map.activate '/activate/:id', :controller => 'activations', :action => 'create'
+  
   map.resources :pages
   map.static 's/:permalink', :controller => 'pages', :action => 'show'
-  map.root :controller => 'pages', :permalink => 'about'
+  
+  map.root :controller => 'user_sessions', :action => 'new'
   
   # The priority is based upon order of creation: first created -> highest priority.
 

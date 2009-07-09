@@ -1,0 +1,15 @@
+%p
+  Username:
+  = @user.username
+%p
+  Email:
+  = @user.email
+  
+%p
+  Login count:
+  = @user.login_count
+%p
+  Current login at:
+  = @user.current_login_at
+  
+=link_to 'Edit', edit_account_path

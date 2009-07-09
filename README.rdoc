@@ -9,6 +9,14 @@ EagleCV is a collaborative tool to manage cv.
   git clone git://github.com/gcrofils/eaglecv.git
   cd eaglecv
   ...
+  
+  cd config
+  cp application.yml.sample application.yml
+  cp database.yml.sample database.yml
+  cp development.rb.sample development.rb
+  
+  Setup the config files
+  
 
 == Google Groups
 Please join google groups to keep informed.
@@ -16,9 +24,4 @@ http://groups.google.com/group/eaglecv/
 
 == Known issues
 
-=== RedCloth
 
-Try gem list --local
-RedCloth should be > 4.0
-
-Try sudo gem update

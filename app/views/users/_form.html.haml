@@ -1,20 +1,19 @@
-- form_for @user do |f|
-  = f.error_messages
+%p
+  = form.label :username
+  %br
+  = form.text_field :username
+%p
+  = form.label :email
+  %br
+  = form.text_field :email
+  
+- unless form.object.new_record?
   %p
-    = f.label :username
+    = form.label :password, "Change password"
     %br
-    = f.text_field :username
+    = form.password_field :password
   %p
-    = f.label :email
+    = form.label :password_confirmation
     %br
-    = f.text_field :email
-  %p
-    = f.label :password
-    %br
-    = f.password_field :password
-  %p
-    = f.label :password_confirmation
-    %br
-    = f.password_field :password_confirmation
-  %p
-    = f.submit "Submit"
+    = form.password_field :password_confirmation
+

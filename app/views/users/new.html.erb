@@ -1,4 +1,8 @@
-<% title "New User" %>
+<% title "REgister" %>
 
-<%= render :partial => 'form' %>
+<% form_for @user, :url => account_path do |f| %>
+  <%= f.error_messages %>
+  <%= render :partial => "form", :object => f %>
+  <%= f.submit "Register" %>
+<% end %>
 
