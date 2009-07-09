@@ -6,6 +6,14 @@ RAILS_GEM_VERSION = '2.3.2' unless defined? RAILS_GEM_VERSION
 # Bootstrap the Rails environment, frameworks, and default configuration
 require File.join(File.dirname(__FILE__), 'boot')
 
+# authorization plugin
+# http://github.com/DocSavage/rails-authorization-plugin/tree/master
+ AUTHORIZATION_MIXIN = "object roles"
+ LOGIN_REQUIRED_REDIRECTION = '/login'
+ PERMISSION_DENIED_REDIRECTION = '/denied.html'
+ STORE_LOCATION_METHOD = :store_location
+
+
 Rails::Initializer.run do |config|
   # Settings in config/environments/* take precedence over those specified here.
   # Application configuration should go into files in config/initializers
