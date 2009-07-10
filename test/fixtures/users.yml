@@ -1,9 +1,12 @@
 one:
-  username: MyString
-  email: MyString
-  password_encrypted: MyString
-
+  username: john
+  email: foo@bar.com
+  crypted_password: 
+  persistence_token: 1659028d3edf257e3ebe5949b39d08aa214566724525e0f270883e7b3a5dcd92d35d75dd474747fbabf9847c056698bcb398e4fb915be6395972c64ac35bf806
+  perishable_token: gxjHuLLnAmh6Xlm_fHq1
 two:
   username: MyString
   email: MyString
-  password_encrypted: MyString
+  crypted_password: 
+  persistence_token: 1659028d3edf257e3ebe5949b39d08aa214566724525e0f270883e7b3a5dcd92d35d75dd474747fbabf9847c056698bcb398e4fb915be6395972c64ac35bf806
+  perishable_token: gxjHuLLnAmh6Xlm_fHq1
