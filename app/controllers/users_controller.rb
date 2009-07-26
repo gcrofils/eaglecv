@@ -11,7 +11,7 @@ class UsersController < ApplicationController
     # Activation based on http://github.com/matthooks/authlogic-activation-tutorial/
     @user = User.new
     if @user.signup!(params)
-      @user.deliver_activation_instructions!
+      @user.send_later(deliver_activation_instructions!)
       flash[:notice] = "Your account has been created. Please check your e-mail for your account activation instructions!"
       redirect_to root_url
     # without activation

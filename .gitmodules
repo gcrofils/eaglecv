@@ -1,3 +1,6 @@
 [submodule "vendor/plugins/authorization"]
 	path = vendor/plugins/authorization
 	url = git://github.com/DocSavage/rails-authorization-plugin.git
+[submodule "vendor/plugins/delayed_job"]
+	path = vendor/plugins/delayed_job
+	url = git://github.com/collectiveidea/delayed_job.git
