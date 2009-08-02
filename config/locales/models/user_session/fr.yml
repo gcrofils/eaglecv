@@ -1,0 +1,8 @@
+fr:
+  activerecord:
+    models:
+      user_session: Logiiing
+    attributes:
+      user_session:
+        username: "Pseudo"
+        password: "mot de passe"

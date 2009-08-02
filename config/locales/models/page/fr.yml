@@ -1,0 +1,9 @@
+fr:
+  activerecord:
+    models:
+      page: "Page Statique"
+    attributes:
+      page:
+        name: "Nom"
+        permalink: "Lien permanent"
+        content: "Contenu"

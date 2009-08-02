@@ -12,10 +12,10 @@ before_filter :require_no_user
     @user = User.find_by_email(params[:email])  
     if @user  
       @user.send_later(:deliver_password_reset_instructions!)
-      flash[:notice] = "We've sent an email to #{@user.email} containing a temporary url that will allow you to reset your password for the next 24 hours. Please check your spam folder if the email doesn't appear within a few minutes. " 
+      flash[:notice] = t(:"controllers.password_resets.email_sent", :email => @user.email)
       redirect_to root_url  
     else  
-      flash[:notice] = "No user was found with that email address"  
+      flash[:notice] = t :"controllers.password_resets.no_user"
       render :action => :new  
     end  
   end  

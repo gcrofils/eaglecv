@@ -1,0 +1,11 @@
+- title t('.title')
+
+%p= t '.instructions'
+
+- form_tag password_resets_path do
+  %p Email:
+  %p= text_field_tag "email" 
+  %br
+  %p= submit_tag t('.reset_my_password')
+
+

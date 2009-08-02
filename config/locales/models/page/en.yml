@@ -1,0 +1,7 @@
+en:
+  activerecord:
+    models:
+      page: "Page"
+    attributes:
+      page:
+        name: "Name"

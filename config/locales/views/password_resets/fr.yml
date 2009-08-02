@@ -1,0 +1,10 @@
+fr:
+  password_resets:
+    edit:
+      title: "Réinit Mot de Passe"
+      update_password: "Modifier mon mot de passe"
+    new:  
+      title: "Mot de passe oublié"
+      instructions: "Complétez le formulaire ci-dessous et les instructions pour réinitiliser votre mot de passe vous seront envoyées par email"
+      reset_my_password: "Réinitialiser mon mot de passe"
+    

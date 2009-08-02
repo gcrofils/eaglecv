@@ -84,3 +84,8 @@ a {
   float: right;
   font-size: 12px;
 }
+
+.translation_missing {
+  color: red;
+  border: dashed 1px #333 ;
+}

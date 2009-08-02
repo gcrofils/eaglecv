@@ -1,0 +1,27 @@
+- title "New Translation"
+
+- form_for ([@locale, @translation]) do |f|
+  = f.error_messages
+  
+  %p
+    = f.label :tr_key
+    %br
+    = f.text_field :tr_key
+  
+  %p
+    = f.label :locale_id
+    %br
+    = f.text_field :locale_id
+  
+  %p
+    = f.label :text
+    %br
+    = f.text_field :text
+    
+  %p
+    = f.label :namespace
+    %br
+    = f.text_field :namespace
+  
+  %p
+    = f.submit "Submit"

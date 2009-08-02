@@ -1,0 +1,9 @@
+en:
+  layouts:
+    application:  
+      my_account: "My Account"
+      logout: "Set your password"
+      are_you_sure_you_want_to_logout: "Are you sure you want to logout ?"
+      register: "Register"
+      login: "Login"
+      forgot_password: "Forgot Password"

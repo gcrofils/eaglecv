@@ -14,6 +14,14 @@ ActionController::Routing::Routes.draw do |map|
   
   map.root :controller => 'user_sessions', :action => 'new'
   
+  map.resources :locales, :member => { :reload => :post } do |loc|
+    loc.resources :translations, :member => {:update_in_place => :post }
+  end
+  
+  map.namespace(:admin) do |m|
+    m.resources :locales
+  end
+  
   # The priority is based upon order of creation: first created -> highest priority.
 
   # Sample of regular route:
@@ -55,4 +63,7 @@ ActionController::Routing::Routes.draw do |map|
   # consider removing the them or commenting them out if you're using named routes and resources.
   map.connect ':controller/:action/:id'
   map.connect ':controller/:action/:id.:format'
+  
+  #http://github.com/raul/translate_routes/
+  ActionController::Routing::Translator.translate_from_file('config','i18n-routes.yml')
 end

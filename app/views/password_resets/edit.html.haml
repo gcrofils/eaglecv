@@ -1,0 +1,14 @@
+- title t('.title')
+
+- form_for @user, :url => password_reset_path, :method => :put do |f|
+  = f.error_messages
+  %p
+    = f.label :password
+    %br
+    = f.password_field :password
+  %p
+    = f.label :password_confirmation
+    %br
+    = f.password_field :password_confirmation
+
+  %p= f.submit t('.update_password')

@@ -1,0 +1,5 @@
+fr:
+  controllers:
+    password_resets:
+      no_user: "Aucune utilisateur n'a été trouvé avec cet email."
+      email_sent: "Un email vient d'être envoyé à l'adresse {{email}} avec des instructions pour réinitiliser votre mot de passe. Vérifier votre répertoire de messages indésirables si vous ne recevez pas de message d'ici quelques minutes."

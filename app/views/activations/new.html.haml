@@ -1,0 +1,16 @@
+- title t(".title")
+
+- form_for @user, :url => activate_path(@user.id), :html => { :method => :post } do |f|
+  %p= f.error_messages
+  
+  %p
+    = f.label :password, t (".set_your_password")
+    %br
+    = f.password_field :password
+  
+  %p
+    = f.label :password_confirmation
+    %br
+    = f.password_field :password_confirmation
+    
+  %p= f.submit t(".activate")

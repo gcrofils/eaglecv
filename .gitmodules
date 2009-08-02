@@ -4,3 +4,21 @@
 [submodule "vendor/plugins/delayed_job"]
 	path = vendor/plugins/delayed_job
 	url = git://github.com/collectiveidea/delayed_job.git
+[submodule "vendor/rails-i18n"]
+	path = vendor/rails-i18n
+	url = git://github.com/svenfuchs/rails-i18n.git
+[submodule "vendor/plugins/translate_routes"]
+	path = vendor/plugins/translate_routes
+	url = git://github.com/raul/translate_routes.git
+[submodule "vendor/plugins/i18n_label"]
+	path = vendor/plugins/i18n_label
+	url = git://github.com/iain/i18n_label.git
+[submodule "vendor/plugins/i18n_db"]
+	path = vendor/plugins/i18n_db
+	url = git://github.com/yar/i18n_db.git
+[submodule "vendor/plugins/simple_loc_compat"]
+	path = vendor/plugins/simple_loc_compat
+	url = git://github.com/yar/simple_loc_compat.git
+[submodule "vendor/plugins/i18n"]
+	path = vendor/plugins/i18n
+	url = git://github.com/svenfuchs/i18n.git
